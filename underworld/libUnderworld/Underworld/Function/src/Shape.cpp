@@ -57,7 +57,7 @@ Fn::Polygon::~Polygon()
 }
 
 
-Fn::Function::func  Fn::Polygon::getFunction( IOsptr sample_input ){
+Fn::Function::func  Fn::Polygon::_getFunction( IOsptr sample_input ){
     // get lambda function.
     func _func;
     if (_fn) {

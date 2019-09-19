@@ -37,7 +37,7 @@ Fn::GradFeVariableFn::GradFeVariableFn( void* fevariable ):Function(), _fevariab
 
 }
 
-Fn::GradFeVariableFn::func Fn::GradFeVariableFn::getFunction( IOsptr sample_input )
+Fn::GradFeVariableFn::func Fn::GradFeVariableFn::_getFunction( IOsptr sample_input )
 {
 
     // setup output

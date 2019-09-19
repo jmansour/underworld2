@@ -29,7 +29,7 @@ Fn::ParticleFound::ParticleFound( void* swarm ):Function(), _swarm(swarm){
 
 }
 
-Fn::ParticleFound::func Fn::ParticleFound::getFunction( IOsptr sample_input )
+Fn::ParticleFound::func Fn::ParticleFound::_getFunction( IOsptr sample_input )
 {
     Swarm* swarm = (Swarm*)_swarm;
 

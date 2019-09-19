@@ -19,7 +19,7 @@ namespace Fn {
         public:
             FeVariableFn( void* fevariable );
             virtual ~FeVariableFn(){};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
         private:
             void* _fevariable;
     };

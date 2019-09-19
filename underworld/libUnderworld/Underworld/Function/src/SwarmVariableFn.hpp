@@ -18,7 +18,7 @@ namespace Fn {
     {
         public:
             SwarmVariableFn( void* swarmvariable );
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~SwarmVariableFn(){}
         private:
             void* _swarmvariable;

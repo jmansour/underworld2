@@ -21,7 +21,7 @@
 
 #include <limits>
 
-Fn::MinMax::func Fn::MinMax::getFunction( IOsptr sample_input )
+Fn::MinMax::func Fn::MinMax::_getFunction( IOsptr sample_input )
 {
     // get function.. nothing to test
     func _func = _fn->getFunction( sample_input );

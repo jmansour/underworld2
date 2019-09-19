@@ -30,7 +30,7 @@ Fn::SwarmVariableFn::SwarmVariableFn( void* swarmvariable ):Function(), _swarmva
 }
 
 
-Fn::SwarmVariableFn::func Fn::SwarmVariableFn::getFunction( IOsptr sample_input )
+Fn::SwarmVariableFn::func Fn::SwarmVariableFn::_getFunction( IOsptr sample_input )
 {
 
     SwarmVariable* swarmvar = (SwarmVariable*)_swarmvariable;

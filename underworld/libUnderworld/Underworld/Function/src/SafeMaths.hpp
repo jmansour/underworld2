@@ -19,7 +19,7 @@ namespace Fn {
     public:
         SafeMaths( Function *fn ): _fn(fn) {};
         virtual ~SafeMaths(){};
-        virtual func getFunction( IOsptr sample_input );
+        virtual func _getFunction( IOsptr sample_input );
     protected:
         Function* _fn;
     };

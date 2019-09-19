@@ -23,7 +23,8 @@ namespace Fn {
         public:
             typedef const FunctionIO* IOsptr;
             typedef std::function<IOsptr( const IOsptr &input )> func;
-            virtual func getFunction( IOsptr input )=0;
+            virtual func _getFunction( IOsptr input )=0;
+            func getFunction( IOsptr input ){return _getFunction(input);};
             virtual ~Function(){};
             void set_pyfnerrorheader( char* pyfnerrorheader ){ _pyfnerrorheader = pyfnerrorheader; }
         protected:
@@ -36,7 +37,7 @@ namespace Fn {
         public:
             Input(){};
             virtual ~Input(){};
-            virtual func getFunction( IOsptr sample_input )
+            virtual func _getFunction( IOsptr sample_input )
             {
                 return [](IOsptr input)->IOsptr { return input; };
             };

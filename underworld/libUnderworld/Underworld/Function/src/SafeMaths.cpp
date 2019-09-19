@@ -13,7 +13,7 @@
 
 #include "SafeMaths.hpp"
 
-Fn::SafeMaths::func Fn::SafeMaths::getFunction( IOsptr sample_input )
+Fn::SafeMaths::func Fn::SafeMaths::_getFunction( IOsptr sample_input )
 {
     // get function.. nothing to test
     func _func = _fn->getFunction( sample_input );

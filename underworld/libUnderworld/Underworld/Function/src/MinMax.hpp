@@ -25,7 +25,7 @@ namespace Fn {
             _min_rank(-1), _max_rank(-1),
             _fn_auxiliary_io_min(NULL), _fn_auxiliary_io_max(NULL) {reset();};
         virtual ~MinMax(){};
-        virtual func getFunction( IOsptr sample_input );
+        virtual func _getFunction( IOsptr sample_input );
         double getMin();
         double getMax();
         double getMinGlobal();

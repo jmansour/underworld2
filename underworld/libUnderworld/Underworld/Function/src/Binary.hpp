@@ -22,7 +22,7 @@ namespace Fn {
     {
         public:
             Binary( Function *fn1, Function *fn2 );
-            virtual func getFunction( IOsptr sample_input ) = 0;
+            virtual func _getFunction( IOsptr sample_input ) = 0;
             virtual ~Binary(){};
         protected:
             Function* _fn[2];
@@ -33,7 +33,7 @@ namespace Fn {
     {
         public:
             Add( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Add(){};
     };
 
@@ -41,7 +41,7 @@ namespace Fn {
     {
         public:
             Subtract( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Subtract(){};
     };
 
@@ -49,7 +49,7 @@ namespace Fn {
     {
         public:
             Multiply( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Multiply(){};
     };
 
@@ -57,7 +57,7 @@ namespace Fn {
     {
         public:
             Divide( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Divide(){};
     };
 
@@ -65,7 +65,7 @@ namespace Fn {
     {
         public:
             Dot( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Dot(){};
     };
 
@@ -73,7 +73,7 @@ namespace Fn {
     {
         public:
             Pow( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Pow(){};
     };
 
@@ -81,7 +81,7 @@ namespace Fn {
     {
         public:
             Min( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Min(){};
     };
 
@@ -89,7 +89,7 @@ namespace Fn {
     {
         public:
             Max( Function *fn1, Function *fn2 ) : Binary( fn1, fn2) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~Max(){};
     };
 

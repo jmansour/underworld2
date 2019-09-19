@@ -48,7 +48,7 @@ namespace Fn {
             typedef void (T::*membFuncType)(const double*, double*);
             // second constructor argument is the pointer to a member function (*F) of T
             _Analytic(T *sol, membFuncType memberFunc): _sol(sol), memberFunc(memberFunc){};
-            virtual func getFunction( IOsptr sample_input )
+            virtual func _getFunction( IOsptr sample_input )
             {
                 // setup output
                 std::shared_ptr<IO_double> _output_sp = std::make_shared<IO_double>(outsize, outtype);

@@ -27,7 +27,7 @@ void Fn::Map::insert( unsigned key, Function* value )
     
 }
 
-Fn::Map::func Fn::Map::getFunction( IOsptr sample_input )
+Fn::Map::func Fn::Map::_getFunction( IOsptr sample_input )
 {
     // get key function
     auto _keyFuncFunc = _keyFunc->getFunction( sample_input );

@@ -18,7 +18,7 @@ namespace Fn {
     {
         public:
             Map(Function* keyFunc, Function* defaultFunc=NULL);
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             void insert( unsigned key, Function* value );
             virtual ~Map(){}
         private:

@@ -36,14 +36,14 @@ namespace Fn {
                 _fn[0] = fn1;
                 _fn[1] = fn2;
             };
-            virtual func getFunction( IOsptr sample_input )
+            virtual func _getFunction( IOsptr sample_input )
                 {
                     // get lambda function.
                     const FunctionIO*  ioguy[2];
                     func _func[2];
                     for (unsigned ii=0; ii<2; ii++) {
                         // get lambda function
-                        _func[ii] = _fn[ii]->getFunction( sample_input );
+                        _func[ii] = _fn[ii]->_getFunction( sample_input );
                         // test evaluation
                         ioguy[ii] = dynamic_cast<const FunctionIO *>(_func[ii](sample_input));
                         if (!ioguy[ii])

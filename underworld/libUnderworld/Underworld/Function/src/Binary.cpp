@@ -30,7 +30,7 @@ void Fn::Binary::initGetFunction( IOsptr sample_input, const IO_double* doubleio
     }
 }
 
-Fn::Add::func Fn::Add::getFunction( IOsptr sample_input )
+Fn::Add::func Fn::Add::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -58,7 +58,7 @@ Fn::Add::func Fn::Add::getFunction( IOsptr sample_input )
     };
 }
 
-Fn::Subtract::func Fn::Subtract::getFunction( IOsptr sample_input )
+Fn::Subtract::func Fn::Subtract::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -85,7 +85,7 @@ Fn::Subtract::func Fn::Subtract::getFunction( IOsptr sample_input )
     };
 }
 
-Fn::Multiply::func  Fn::Multiply::getFunction( IOsptr sample_input )
+Fn::Multiply::func  Fn::Multiply::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -133,7 +133,7 @@ Fn::Multiply::func  Fn::Multiply::getFunction( IOsptr sample_input )
 }
 
 
-Fn::Divide::func  Fn::Divide::getFunction( IOsptr sample_input )
+Fn::Divide::func  Fn::Divide::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -181,7 +181,7 @@ Fn::Divide::func  Fn::Divide::getFunction( IOsptr sample_input )
         };
 }
 
-Fn::Dot::func Fn::Dot::getFunction( IOsptr sample_input )
+Fn::Dot::func Fn::Dot::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -212,7 +212,7 @@ Fn::Dot::func Fn::Dot::getFunction( IOsptr sample_input )
     };
 }
 
-Fn::Pow::func Fn::Pow::getFunction( IOsptr sample_input )
+Fn::Pow::func Fn::Pow::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -241,7 +241,7 @@ Fn::Pow::func Fn::Pow::getFunction( IOsptr sample_input )
 }
 
 
-Fn::Min::func Fn::Min::getFunction( IOsptr sample_input )
+Fn::Min::func Fn::Min::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];
@@ -266,7 +266,7 @@ Fn::Min::func Fn::Min::getFunction( IOsptr sample_input )
 }
 
 
-Fn::Max::func Fn::Max::getFunction( IOsptr sample_input )
+Fn::Max::func Fn::Max::_getFunction( IOsptr sample_input )
 {
     const IO_double* doubleio[2];
     func _func[2];

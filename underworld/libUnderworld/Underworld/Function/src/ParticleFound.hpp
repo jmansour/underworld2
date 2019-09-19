@@ -18,7 +18,7 @@ namespace Fn {
     {
         public:
             ParticleFound( void* swarm );
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~ParticleFound(){}
         private:
             void* _swarm;

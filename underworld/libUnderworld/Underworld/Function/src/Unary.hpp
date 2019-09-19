@@ -20,13 +20,13 @@ namespace Fn {
     {
         public:
             MathUnary(Function* fn): _fn(fn){};
-            virtual func getFunction( IOsptr sample_input )
+            virtual func _getFunction( IOsptr sample_input )
                 {
                     // get lambda function.
                     unsigned outsize = sample_input->size();
                     func _func;
                     if (_fn) {
-                        _func = _fn->getFunction( sample_input );
+                        _func = _fn->_getFunction( sample_input );
 
                         // test out to make sure it's double
                         const IO_double* doubleio;
@@ -72,7 +72,7 @@ namespace Fn {
     {
         public:
             At(Function* fn, unsigned component): _fn(fn),_component(component){};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~At(){};
         protected:
             Function* _fn;

@@ -12,7 +12,7 @@
 
 #include "Unary.hpp"
 
-Fn::At::func Fn::At::getFunction( IOsptr sample_input )
+Fn::At::func Fn::At::_getFunction( IOsptr sample_input )
 {
     // get lambda function.
     func _func;

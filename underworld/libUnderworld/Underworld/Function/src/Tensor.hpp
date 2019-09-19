@@ -21,7 +21,7 @@ namespace Fn {
                 get_symmetric, get_antisymmetric, second_invariant, get_deviatoric
             };
             TensorFunc(Function* fn, TensorFuncFunc partFunc): _fn(fn), _partFunc(partFunc) {};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             virtual ~TensorFunc(){};
         protected:
             Function* _fn;

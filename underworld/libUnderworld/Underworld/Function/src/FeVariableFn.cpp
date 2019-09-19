@@ -30,7 +30,7 @@ Fn::FeVariableFn::FeVariableFn( void* fevariable ):Function(), _fevariable(fevar
 
 }
 
-Fn::FeVariableFn::func Fn::FeVariableFn::getFunction( IOsptr sample_input )
+Fn::FeVariableFn::func Fn::FeVariableFn::_getFunction( IOsptr sample_input )
 {
 
     // setup output

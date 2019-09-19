@@ -16,7 +16,7 @@ void Fn::Conditional::insert( Function* condition, Function* value )
     _clause.push_back( std::pair<Function*,Function*>(condition,value) );
 }
 
-Fn::Conditional::func Fn::Conditional::getFunction( IOsptr sample_input )
+Fn::Conditional::func Fn::Conditional::_getFunction( IOsptr sample_input )
 {
     // are there any clauses?
     if (_clause.size() == 0)

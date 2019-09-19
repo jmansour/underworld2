@@ -23,7 +23,7 @@ extern "C" {
 
 #include "Tensor.hpp"
 
-Fn::TensorFunc::func Fn::TensorFunc::getFunction( IOsptr sample_input )
+Fn::TensorFunc::func Fn::TensorFunc::_getFunction( IOsptr sample_input )
 {
     func _func;
     if (_fn) {

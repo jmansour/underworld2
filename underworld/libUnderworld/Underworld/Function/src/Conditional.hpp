@@ -18,7 +18,7 @@ namespace Fn {
     {
         public:
             Conditional(){};
-            virtual func getFunction( IOsptr sample_input );
+            virtual func _getFunction( IOsptr sample_input );
             void insert( Function* condition, Function* value );
             virtual ~Conditional(){}
         private:

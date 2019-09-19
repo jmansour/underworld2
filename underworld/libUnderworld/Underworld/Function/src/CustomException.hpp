@@ -20,7 +20,7 @@ namespace Fn {
         CustomException( Function *fn_input, Function *fn_condition, Function *fn_print=NULL ):
         _fn_input(fn_input), _fn_condition(fn_condition), _fn_print(fn_print) {};
         virtual ~CustomException(){};
-        virtual func getFunction( IOsptr sample_input );
+        virtual func _getFunction( IOsptr sample_input );
     protected:
         Function* _fn_input;
         Function* _fn_condition;

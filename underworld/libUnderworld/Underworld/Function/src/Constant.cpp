@@ -8,7 +8,7 @@
 **~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*/
 #include "Constant.hpp"
 
-Fn::Constant::func Fn::Constant::getFunction( IOsptr sample_input )
+Fn::Constant::func Fn::Constant::_getFunction( IOsptr sample_input )
 {
     return [this](IOsptr input)->IOsptr {
         return debug_dynamic_cast<const FunctionIO*>(this->_constIO);

@@ -12,7 +12,7 @@
 
 #include "CustomException.hpp"
 
-Fn::CustomException::func Fn::CustomException::getFunction( IOsptr sample_input )
+Fn::CustomException::func Fn::CustomException::_getFunction( IOsptr sample_input )
 {
     // get functions.. nothing to test as will simply be passed through
     func func_input = _fn_input->getFunction( sample_input );
