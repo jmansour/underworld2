@@ -1,6 +1,11 @@
 CHANGES: Underworld2
 =======================
 
+Release 2.10.0 []
+-----------------
+Enhancements:
+* Improved error messaging. 
+
 Release 2.9.1 [2020-02-18]
 ---------------------------
 Enhancements:

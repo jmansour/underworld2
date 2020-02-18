@@ -471,8 +471,9 @@ class StokesSolver(_stgermain.StgCompoundComponent):
                 "and sufficient and that your viscosity is positive everywhere. " \
                 "If you are deforming the mesh, ensure that it has not become " \
                 "tangled. \n\n" \
-                "The resultant KSPConvergedReasons are (f_hat, outer, backsolve) ({},{},{}).\n\n".format(
-                self._cself.fhat_reason,self._cself.outer_reason, self._cself.backsolve_reason)
+                "The resultant `KSPConvergedReason` codes are (f_hat, outer, backsolve) ({},{},{}).\n".format(
+                self._cself.fhat_reason,self._cself.outer_reason, self._cself.backsolve_reason)  + \
+                "Please consult the PETSc documentation for code details."
             if uw.mpi.rank == 0:
                 warnings.warn(estring)
 
